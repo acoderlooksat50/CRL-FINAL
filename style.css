@@ -6,8 +6,12 @@
     --clr-neutral-400: #A59678;
     --clr-neutral-200: #FFFFFF;
     --clr-neutral-900: #6F737F;
-
     
+    --ff-regular: "Montserrat", sans-serif;
+    --ff-accent: "Oswald", sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
 }
 
 *, *::before, *::after {
@@ -50,5 +54,140 @@ p, h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
+}
+
+/*-----------general styling----------*/
+body{
+    font-family: var(--ff-regular);
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-900);
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* added for nav-toggle positioning */
+    position: relative;
+}
+
+header {
+    background: var(--clr-primary-900);
+    padding: 1em 0;
+    text-align: center;
+}
+
+.nav {
+    width: 100%;
+}
+
+
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: var(--clr-secondary-400);
+    color: white;
+    transition: opacity 250ms ease;
+    
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: var(--clr-primary-900);
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+/* made changes here from video
+   to make it more accessible.
+   
+   Works the same :) */
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    font-size: 1em;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
+
+.nav__list{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav__list--primary{
+    margin-bottom: 2em;
+}
+
+.nav__item{
+    padding: 10px 0;
+    text-transform: uppercase;
+    margin-top: .5em;
+
+}
+
+.nav__list--secondary .nav__item:last-child{
+    margin-top: 20px;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: white;
+}
+
+.nav__link:hover,
+.nav__link:focus{
+    opacity: .65;
+}
+
+.nav__link--button{
+    background-color: #fff;
+    color: #136c72;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.logo {
+    height: 30px;
+    display: inline-block;
 }
 
