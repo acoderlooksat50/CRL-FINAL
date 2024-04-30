@@ -161,12 +161,8 @@ header {
 .nav__item{
     padding: 10px 0;
     text-transform: uppercase;
-    margin-top: .5em;
+    margin-top: .1em;
 
-}
-
-.nav__list--secondary .nav__item:last-child{
-    margin-top: 20px;
 }
 
 .nav__link{
@@ -180,8 +176,7 @@ header {
 }
 
 .nav__link--button{
-    background-color: #fff;
-    color: #136c72;
+    background-color: var(--clr-neutral-400);
     padding: 10px 20px;
     border-radius: 50px;
 }
@@ -189,5 +184,42 @@ header {
 .logo {
     height: 30px;
     display: inline-block;
+}
+
+.dark{
+  font-style: var(--ff-accent);
+  font-size: 1.125rem;
+}
+
+
+/*-----------------hero----------------------*/
+.hero{
+  background-color: var(--clr-primary-400);
+}
+
+.hero p{
+  padding: 1.2em 0;
+  color: var(--clr-secondary-400);
+}
+
+.hero a{
+  background-color: var(--clr-neutral-400);
+  text-decoration: none;
+  color: var(--clr-neutral-200);
+  padding: 5px 10px;
+  border-radius: 50px;
+  display:inline-block;
+  margin: 0 30px 20px;
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+}
+.title{
+  color: var(--clr-neutral-200);
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+  font-size: 2rem;
+}
+.title span{
+  color: var(--clr-neutral-400);
 }
 
