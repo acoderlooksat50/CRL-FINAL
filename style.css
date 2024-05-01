@@ -245,3 +245,47 @@ header {
 .section_paragraph{
   font-size: 1.125rem;
 }
+
+/*----------------second section----------------*/
+.section__main{
+  border: blue solid 1px;
+}
+
+.second-section_title{
+  color: var(--clr-neutral-400);
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+  font-size: 2rem;
+  padding: 10px 0;
+}
+
+.second-section_paragraph{
+  font-size: 1.125rem;
+  padding: 10px 0;
+}
+
+.sidebar{
+  text-align: center;
+  color: var(--clr-neutral-200);
+}
+
+.sidebar__card{
+  border:black solid 1px;
+  background-color: var(--clr-primary-400);
+}
+
+.sidebar__title{
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+  font-size: 1.875rem;
+  min-height: 1.875rem;
+  padding: 20px 0;
+}
+
+.sidebar__card+.sidebar__card{
+  margin: 10px 0;
+}
+
+.sidebar_paragraph{
+  padding-bottom: 15px;
+}
