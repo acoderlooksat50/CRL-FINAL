@@ -290,3 +290,42 @@ header {
   padding-bottom: 1.2rem;
   margin-bottom: 1rem;
 }
+
+/*----------------footer-----------*/
+.third-section .container{
+  background-color: var(--clr-primary-400); 
+}
+
+.third-section_title{
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+  color: var(--clr-neutral-200);
+  text-align: center;
+  padding: 1.2rem 0;
+}
+
+.site-map__paragraph{
+  padding-bottom: 1.2rem;
+}
+
+.site-map__title{
+  color: var(--clr-neutral-400);
+  font-weight: var(--fw-bold);
+  font-style: var(--ff-accent);
+  font-size: 1.3125rem;
+}
+
+.site-map__list_item{
+  list-style: none;
+}
+
+.site-map__link{
+  text-decoration: none;
+  color: var(--clr-neutral-900);
+}
+
+.site-map__paragraph, .site-map__list{
+  font-size: 1rem;
+  color: var(--clr-neutral-900);
+}
